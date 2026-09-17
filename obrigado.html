@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Instruções para acessar o Kangrana após a confirmação do pagamento.">
+  <title>Pagamento confirmado | Kangrana</title>
+  <link rel="icon" type="image/jpeg" href="assets/kangrana-icon.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .thanks-header .header-inner{justify-content:flex-start}
+    .thanks-main{min-height:calc(100svh - 73px);display:flex;align-items:center;padding-block:64px 80px}
+    .thanks-content{width:min(100%,900px);margin-inline:auto}
+    .thanks-intro{display:grid;grid-template-columns:minmax(0,1fr) 170px;align-items:center;gap:32px;margin-bottom:34px}
+    .thanks-intro .eyebrow{margin-bottom:16px}
+    .thanks-intro h1{font-size:clamp(38px,5vw,60px);margin-bottom:18px}
+    .thanks-intro h1 em{color:var(--cyan)}
+    .thanks-intro .lead{font-size:18px;margin-bottom:0}
+    .thanks-mascot{display:block;width:170px;height:auto;filter:drop-shadow(0 18px 30px #0006)}
+    .thanks-card{padding:36px 42px 38px;border:1px solid #4b6682;border-radius:26px;background:linear-gradient(125deg,#1d2e44,#16253a);box-shadow:0 28px 70px #0003}
+    .thanks-card h2{font-size:clamp(25px,3vw,32px);margin-bottom:24px}
+    .thanks-steps{list-style:none;counter-reset:step;display:grid;grid-template-columns:1fr 1fr;gap:16px 26px;margin:0 0 32px;padding:0}
+    .thanks-steps li{counter-increment:step;display:flex;align-items:flex-start;gap:14px;color:#eff6fa;line-height:1.5}
+    .thanks-steps li::before{content:counter(step,decimal-leading-zero);flex:none;display:grid;place-items:center;width:36px;height:36px;border:1px solid #56859c;border-radius:10px;background:#163449;color:var(--cyan);font-size:12px;font-weight:800}
+    .thanks-steps li span{padding-top:4px}
+    .thanks-action{padding-top:26px;border-top:1px solid var(--line)}
+    .thanks-action .button{min-width:260px}
+    .thanks-notes{margin-top:24px}
+    .thanks-notes p{margin:0 0 8px;font-size:14px}
+    .thanks-notes p:last-child{margin-bottom:0}
+    @media(max-width:800px){.thanks-main{min-height:calc(100svh - 63px);padding-block:44px 64px}.thanks-intro{grid-template-columns:minmax(0,1fr) 96px;gap:10px;margin-bottom:26px}.thanks-intro h1{font-size:clamp(34px,7vw,48px)}.thanks-intro .lead{font-size:16px}.thanks-mascot{width:96px}.thanks-card{padding:28px 24px}.thanks-steps{grid-template-columns:1fr;gap:18px}.thanks-action .button{width:100%}}
+    @media(max-width:480px){.thanks-intro{display:block;position:relative;padding-right:58px}.thanks-intro h1{font-size:clamp(32px,9vw,42px)}.thanks-intro .lead{margin-right:-58px}.thanks-mascot{position:absolute;right:-7px;top:0;width:62px}.thanks-card{padding:24px 20px;border-radius:20px}.thanks-card h2{font-size:25px}.thanks-steps li{font-size:15px}.thanks-notes p{font-size:13px}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header thanks-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Kangrana, voltar à página inicial"><img src="assets/kangrana-icon.jpg" width="34" height="34" alt=""><span>Kangrana</span></a>
+    </div>
+  </header>
+
+  <main id="conteudo" class="thanks-main shell">
+    <div class="thanks-content">
+      <div class="thanks-intro">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> ACESSO AO KANGRANA</p>
+          <h1>Pagamento confirmado! <em>Seu acesso ao Kangrana está liberado.</em></h1>
+          <p class="lead">Você está a poucos passos de começar a organizar sua grana.</p>
+        </div>
+        <img class="thanks-mascot" src="assets/kangrana-mascot.webp" width="280" height="301" alt="" aria-hidden="true">
+      </div>
+
+      <section class="thanks-card" aria-labelledby="steps-title">
+        <h2 id="steps-title">Como começar</h2>
+        <ol class="thanks-steps">
+          <li><span>Acesse o Kangrana pelo botão abaixo.</span></li>
+          <li><span>No primeiro acesso, clique em ‘Criar meu acesso’.</span></li>
+          <li><span>Use o mesmo e-mail informado na compra e crie sua senha.</span></li>
+          <li><span>Confirme o e-mail recebido para entrar.</span></li>
+        </ol>
+        <div class="thanks-action">
+          <a class="button button-primary" href="https://kangrana.vercel.app/">Acessar o Kangrana</a>
+          <div class="thanks-notes">
+            <p>Já possui uma conta? Entre normalmente com seu e-mail e senha.</p>
+            <p>Não encontrou o e-mail de confirmação? Verifique Spam e Promoções.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
